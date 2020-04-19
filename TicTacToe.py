@@ -95,6 +95,7 @@ if __name__ == '__main__':
 		if newgame =='Y' or newgame =='y':
 			print ("Let's Play")
 			newgameloop=True
+			#Prints TicTacToe Board
 			printboard()
 			playerlist = assignXorO()
 			startingplayer=whogoesfirst()
