@@ -83,9 +83,11 @@ def slotallocation(startingplayer,playerlist):
 	print (f" Player 1 Slots {Player1slotlist}")
 	print (f" Player 2 Slots {Player2slotlist}")
 
+#Start of the program
 if __name__ == '__main__':
 	
 	import random
+#Create Gameloop to ask if players want to play a new game
 	newgameloop=True
 	playerlist={'Player1':' ', 'Player2':' '}
 	while newgameloop:
@@ -93,6 +95,7 @@ if __name__ == '__main__':
 		if newgame =='Y' or newgame =='y':
 			print ("Let's Play")
 			newgameloop=True
+			#Prints TicTacToe Board
 			printboard()
 			playerlist = assignXorO()
 			startingplayer=whogoesfirst()
